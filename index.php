@@ -44,6 +44,7 @@
                     </a>
                     <p class="post-meta">Publicado por <a href="<?php echo get_edit_user_link(); ?>"> <?php echo get_the_author(); ?> </a> em <?php echo the_date('d-m-Y');?></p>
                 </div>
+                <hr>
               <?php endwhile; ?>
               <ul class="pager">
                   <li class="next"> <?php next_posts_link('Próximo') ?> </li>
@@ -53,8 +54,9 @@
           </div>
       </div>
   </div>
-
   <hr>
+  <?php get_footer(); ?>
+
   <!-- jQuery -->
     <script src="http://localhost/wordpress/wp-content/themes/neeec-theme/js/jquery.js"></script>
 
