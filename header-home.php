@@ -41,7 +41,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <img src="http://localhost/wordpress/wp-content/themes/neeec-theme/img/neeec-logo.png" style="height: 200px; width: 200px">
+                        <img src="http://localhost/wordpress/wp-content/themes/neeec-theme/img/neeec-logo.png" style="height: 210px; width: 210px">
                         <hr class="small">
                         <span class="subheading">Núcleo de Engenharia Electrotéctica e de Computadores</span>
                     </div>
