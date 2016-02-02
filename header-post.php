@@ -39,10 +39,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <img src="http://localhost/wordpress/wp-content/themes/neeec-theme/img/neeec-logo.png" style="height: 210px; width: 210px">
-                    <hr class="small">
-                    <span class="subheading">Núcleo de Engenharia Electrotéctica e de Computadores</span>
+                <div class="post-heading">
+                    <?php while(have_posts()) : the_post();?>
+                      <h1><?php the_title(); ?></h1>
+                      <h2 class="subheading"><?php echo substr(get_the_excerpt(), 0,70); ?> [...]</h2>
+                      <span class="meta">Publicado por <a href="<?php echo get_edit_user_link(); ?>"> <?php echo get_the_author(); ?> </a> em <?php echo the_date('d-m-Y');?></span>
+                    <?php endwhile; wp_reset_query(); ?>
                 </div>
             </div>
         </div>
