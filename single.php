@@ -24,6 +24,17 @@
 <body>
 <?php get_header('post');?>
 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <!-- Post Content -->
+          <p> <?php the_content(''); ?> </p>
+        </div>
+    </div>
+</div>
+</article>
+
+
 <hr>
 <?php get_footer(); ?>
 
